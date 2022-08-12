@@ -1,0 +1,43 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        google()
+        maven {
+            url "https://maven.garenanow.com/nexus/content/groups/public/"
+        }
+        maven { url 'https://maven.fabric.io/public' }
+        flatDir {
+            dirs rootProject.projectDir.absolutePath + '/libs'
+        }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        flatDir {
+            dirs 'libs'
+        }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+}
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        maven {
+            url "https://maven.garenanow.com/nexus/content/groups/public/"
+        }
+        maven { url 'https://maven.fabric.io/public' }
+        flatDir {
+            dirs rootProject.projectDir.absolutePath + '/libs'
+        }
+        maven { url 'https://repo1.maven.org/maven2/' }
+        flatDir {
+            dirs 'libs'
+        }
+        maven { url 'https://jitpack.io' }
+        mavenCentral()
+        maven { url 'https://plugins.gradle.org/m2/' }
+    }
+}
+rootProject.name = "Experiment2"
+include ':app'
+include ':dfcompanyinstalltime'
